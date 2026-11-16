@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicamentos | MediCore 360</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MediCore 360</h1>
+        <p>Sistema de gestión de centros médicos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="citas.html">Citas médicas</a></li>
+            <li><a href="consultorios.html">Consultorios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="medicamentos.html">Medicamentos</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Gestión de medicamentos</h2>
+
+            <p>
+                Administra el inventario de medicamentos,
+                controla las existencias y consulta sus fechas de vencimiento.
+            </p>
+        </section>
+
+        <section class="modulos">
+
+            <h2>Registrar nuevo medicamento</h2>
+
+            <form class="tarjeta">
+
+                <div class="grupo-campo">
+                    <label for="codigo">Código del medicamento</label>
+                    <input type="text" id="codigo"
+                        placeholder="Ejemplo: MED-001">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre del medicamento</label>
+                    <input type="text" id="nombre"
+                        placeholder="Ingrese nombre">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="presentacion">Presentación</label>
+                    <select id="presentacion">
+                        <option value="">Seleccione presentación</option>
+                        <option>Tabletas</option>
+                        <option>Cápsulas</option>
+                        <option>Jarabe</option>
+                        <option>Solución</option>
+                        <option>Crema</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="stock">Cantidad disponible</label>
+                    <input type="number" id="stock"
+                        min="0" placeholder="Ingrese existencias">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="vencimiento">Fecha de vencimiento</label>
+                    <input type="date" id="vencimiento">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" rows="3"
+                        placeholder="Información del medicamento"></textarea>
+                </div>
+
+                <button type="button" class="boton">
+                    Registrar medicamento
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="texto-ejemplo">
+
+            <h2>Consulta de medicamentos</h2>
+
+            <div class="busqueda">
+                <input type="search"
+                    placeholder="Buscar por código o nombre">
+
+                <button type="button" class="boton">
+                    Buscar
+                </button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Medicamento</th>
+                        <th>Presentación</th>
+                        <th>Existencias</th>
+                        <th>Vencimiento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>MED-001</td>
+                        <td>Medicamento de prueba</td>
+                        <td>Tabletas</td>
+                        <td>50</td>
+                        <td>30/12/2026</td>
+                        <td>
+                            <button type="button" class="accion">
+                                Consultar
+                            </button>
+
+                            <button type="button" class="accion">
+                                Actualizar
+                            </button>
+
+                            <button type="button" class="accion eliminar">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tratamientos | MediCore 360</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MediCore 360</h1>
+        <p>Sistema de gestión de centros médicos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="citas.html">Citas médicas</a></li>
+            <li><a href="consultorios.html">Consultorios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="medicamentos.html">Medicamentos</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Gestión de tratamientos</h2>
+
+            <p>
+                Registra y administra los tratamientos médicos
+                asignados a los pacientes del centro médico.
+            </p>
+        </section>
+
+        <section class="modulos">
+
+            <h2>Registrar nuevo tratamiento</h2>
+
+            <form class="tarjeta">
+
+                <div class="grupo-campo">
+                    <label for="codigo">Código del tratamiento</label>
+                    <input type="text" id="codigo"
+                        placeholder="Ejemplo: TRA-001">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="paciente">Paciente</label>
+                    <select id="paciente">
+                        <option value="">Seleccione un paciente</option>
+                        <option>Paciente de prueba</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="medico">Médico responsable</label>
+                    <select id="medico">
+                        <option value="">Seleccione un médico</option>
+                        <option>Médico de prueba</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="diagnostico">Diagnóstico</label>
+                    <textarea id="diagnostico" rows="3"
+                        placeholder="Ingrese el diagnóstico"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="descripcion">Descripción del tratamiento</label>
+                    <textarea id="descripcion" rows="3"
+                        placeholder="Describa el tratamiento indicado"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="medicamento">Medicamento asociado</label>
+                    <select id="medicamento">
+                        <option value="">Seleccione un medicamento</option>
+                        <option>Medicamento de prueba</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha">Fecha de inicio</label>
+                    <input type="date" id="fecha">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="estado">Estado del tratamiento</label>
+                    <select id="estado">
+                        <option>Activo</option>
+                        <option>Finalizado</option>
+                        <option>Suspendido</option>
+                    </select>
+                </div>
+
+                <button type="button" class="boton">
+                    Registrar tratamiento
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="texto-ejemplo">
+
+            <h2>Consulta de tratamientos</h2>
+
+            <div class="busqueda">
+                <input type="search"
+                    placeholder="Buscar por paciente o código">
+
+                <button type="button" class="boton">
+                    Buscar
+                </button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Paciente</th>
+                        <th>Diagnóstico</th>
+                        <th>Médico</th>
+                        <th>Fecha de inicio</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>TRA-001</td>
+                        <td>Paciente de prueba</td>
+                        <td>Diagnóstico de prueba</td>
+                        <td>Médico de prueba</td>
+                        <td>05/11/2026</td>
+                        <td>Activo</td>
+                        <td>
+                            <button type="button" class="accion">
+                                Consultar
+                            </button>
+
+                            <button type="button" class="accion">
+                                Editar
+                            </button>
+
+                            <button type="button" class="accion eliminar">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+
+</body>
+</html>

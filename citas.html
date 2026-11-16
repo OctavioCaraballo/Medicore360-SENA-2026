@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Citas médicas | MediCore 360</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MediCore 360</h1>
+        <p>Sistema de gestión de centros médicos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="citas.html">Citas médicas</a></li>
+            <li><a href="consultorios.html">Consultorios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="medicamentos.html">Medicamentos</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Gestión de citas médicas</h2>
+
+            <p>
+                Programa, consulta y administra las citas
+                médicas de los pacientes del centro médico.
+            </p>
+        </section>
+
+        <section class="modulos">
+
+            <h2>Programar nueva cita</h2>
+
+            <form class="tarjeta">
+
+                <div class="grupo-campo">
+                    <label for="paciente">Paciente</label>
+                    <select id="paciente" name="paciente">
+                        <option value="">Seleccione un paciente</option>
+                        <option>Paciente de prueba</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="medico">Médico</label>
+                    <select id="medico" name="medico">
+                        <option value="">Seleccione un médico</option>
+                        <option>Médico de prueba</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha">Fecha de la cita</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="hora">Hora de la cita</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="consultorio">Consultorio</label>
+                    <select id="consultorio" name="consultorio">
+                        <option value="">Seleccione un consultorio</option>
+                        <option>Consultorio 1</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="motivo">Motivo de consulta</label>
+                    <textarea id="motivo" name="motivo"
+                        rows="3"
+                        placeholder="Describa el motivo de la consulta"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="estado">Estado de la cita</label>
+                    <select id="estado" name="estado">
+                        <option>Programada</option>
+                        <option>Confirmada</option>
+                        <option>Cancelada</option>
+                    </select>
+                </div>
+
+                <button type="button" class="boton">
+                    Programar cita
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="texto-ejemplo">
+
+            <h2>Consulta de citas médicas</h2>
+
+            <div class="busqueda">
+                <input type="search"
+                    placeholder="Buscar por paciente o médico">
+
+                <button type="button" class="boton">
+                    Buscar
+                </button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Médico</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Consultorio</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Paciente de prueba</td>
+                        <td>Médico de prueba</td>
+                        <td>05/11/2026</td>
+                        <td>08:00 a. m.</td>
+                        <td>Consultorio 1</td>
+                        <td>Programada</td>
+                        <td>
+                            <button type="button" class="accion">
+                                Consultar
+                            </button>
+                            <button type="button" class="accion">
+                                Editar
+                            </button>
+                            <button type="button" class="accion eliminar">
+                                Cancelar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+
+</body>
+</html>

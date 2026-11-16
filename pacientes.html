@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pacientes | MediCore 360</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>MediCore 360</h1>
+        <p>Sistema de gestión de centros médicos</p>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="citas.html">Citas médicas</a></li>
+            <li><a href="consultorios.html">Consultorios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="medicamentos.html">Medicamentos</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <section class="bienvenida">
+
+            <h2>Gestión de pacientes</h2>
+
+            <p>
+                Administra el registro, consulta y actualización
+                de la información de los pacientes del centro médico.
+            </p>
+
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <section class="modulos">
+
+            <h2>Registrar nuevo paciente</h2>
+
+            <form class="tarjeta">
+
+                <div class="grupo-campo">
+                    <label for="identificacion">Número de identificación</label>
+                    <input type="text" id="identificacion"
+                        name="identificacion" placeholder="Ingrese identificación">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombres y apellidos</label>
+                    <input type="text" id="nombre"
+                        name="nombre" placeholder="Ingrese nombre completo">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono"
+                        name="telefono" placeholder="Ingrese teléfono">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo"
+                        name="correo" placeholder="Ingrese correo electrónico">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion"
+                        name="direccion" placeholder="Ingrese dirección">
+                </div>
+
+                <button class="boton" type="button">
+                    Registrar paciente
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- CONSULTA DE PACIENTES -->
+        <section class="texto-ejemplo">
+
+            <h2>Consulta de pacientes</h2>
+
+            <p>
+                En esta sección se visualizará el listado
+                de pacientes registrados en el sistema.
+            </p>
+<div class="busqueda">
+
+    <input
+        type="search"
+        placeholder="Buscar por identificación o nombre">
+
+    <button type="button" class="boton">
+        Buscar
+    </button>
+
+</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Identificación</th>
+                        <th>Nombre del paciente</th>
+                        <th>Teléfono</th>
+                        <th>Correo electrónico</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ejemplo</td>
+                        <td>Paciente de prueba</td>
+                        <td>0000000000</td>
+                        <td>ejemplo@correo.com</td>
+                        <td>
+    <button type="button" class="accion">Consultar</button>
+    <button type="button" class="accion">Editar</button>
+    <button type="button" class="accion eliminar">Eliminar</button>
+</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultorios | MediCore 360</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MediCore 360</h1>
+        <p>Sistema de gestión de centros médicos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="citas.html">Citas médicas</a></li>
+            <li><a href="consultorios.html">Consultorios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="medicamentos.html">Medicamentos</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Gestión de consultorios</h2>
+
+            <p>
+                Administra los espacios físicos destinados
+                a la atención médica y consulta su disponibilidad.
+            </p>
+        </section>
+
+        <section class="modulos">
+
+            <h2>Registrar nuevo consultorio</h2>
+
+            <form class="tarjeta">
+
+                <div class="grupo-campo">
+                    <label for="codigo">Código del consultorio</label>
+                    <input type="text" id="codigo"
+                        placeholder="Ejemplo: CON-001">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre del consultorio</label>
+                    <input type="text" id="nombre"
+                        placeholder="Ingrese nombre">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" id="ubicacion"
+                        placeholder="Ingrese ubicación">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="capacidad">Capacidad</label>
+                    <input type="number" id="capacidad"
+                        min="1" placeholder="Número de personas">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="estado">Estado del consultorio</label>
+                    <select id="estado">
+                        <option>Disponible</option>
+                        <option>Ocupado</option>
+                        <option>En mantenimiento</option>
+                    </select>
+                </div>
+
+                <button type="button" class="boton">
+                    Registrar consultorio
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="texto-ejemplo">
+
+            <h2>Consulta de consultorios</h2>
+
+            <div class="busqueda">
+                <input type="search"
+                    placeholder="Buscar por código o nombre">
+
+                <button type="button" class="boton">
+                    Buscar
+                </button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Consultorio</th>
+                        <th>Ubicación</th>
+                        <th>Capacidad</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CON-001</td>
+                        <td>Consultorio 1</td>
+                        <td>Primer piso</td>
+                        <td>2</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button type="button" class="accion">
+                                Consultar
+                            </button>
+                            <button type="button" class="accion">
+                                Editar
+                            </button>
+                            <button type="button" class="accion eliminar">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+
+</body>
+</html>
